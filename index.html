@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análisis Salarial</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <main>
+        <h1 class="title">Análisis Salarial</h1>
+        <p class="explanation">
+            Este es un análisis salarial ficticio para practicar 
+            con algunas herramientas de JavaScript.
+        </p>
+        <div class="salarys">
+            <button id="enterprices-button" class="salarys__change-button salarys__change-button--active">Empresas</button>
+            <button id="persons-button" class="salarys__change-button">Personas</button>
+            <section id="salarys-box" class="box">
+
+            </section>
+        </div>
+
+        <section class="projections">
+            <h2 class="projections__title">Proyecciones salariales</h2>
+            <div class="projections__projection">
+                <h3 class="projection__title">
+                    Proyección del salario promedio que darán
+                    las empresas para el año 2024.
+                </h3>
+                <div class="projection__options">
+                    <select id="enterprise-projection-name" class="projection__options__select">
+                        <option value="Freelance">Freelance</option>
+                        <option value="Industrias Mokepon">Industrias Mokepon</option>
+                        <option value="MarketerosCOL">MarketerosCOL</option>
+                        <option value="Mokepon">Mokepon</option>
+                        <option value="Inversionify">Inversionify</option>
+                        <option value="Wayne Enterprises">Wayne Enterprises</option>
+                        <option value="Daily Planet">Daily Planet</option>
+                        <option value="LexCorp">LexCorp</option>
+                    </select>
+                    <button id="enterprise-projection-button" class="projection__options__button">Calcular</button>
+                </div>
+                <p id="enterprise-projection-result" class="projection__result"></p>
+            </div>
+            <div class="projections__projection">
+                <h3 class="projection__title">
+                    Promedio de salario que pagó una empresa por año.
+                </h3>
+                <div class="projection__options">
+                    <select id="enterprise-average-name" class="projection__options__select" name="" id="">
+                        <option value="Freelance">Freelance</option>
+                        <option value="Industrias Mokepon">Industrias Mokepon</option>
+                        <option value="MarketerosCOL">MarketerosCOL</option>
+                        <option value="Mokepon">Mokepon</option>
+                        <option value="Inversionify">Inversionify</option>
+                        <option value="Wayne Enterprises">Wayne Enterprises</option>
+                        <option value="Daily Planet">Daily Planet</option>
+                        <option value="LexCorp">LexCorp</option>
+                    </select>
+                    <select id="enterprise-average-year" class="projection__options__select" name="" id="">
+                        <option value="2018">2018</option>
+                        <option value="2019">2019</option>
+                        <option value="2020">2020</option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                    </select>
+                    <button id="enterprise-average-button" class="projection__options__button">Calcular</button>
+                </div>
+                <p id="enterprise-average-result" class="projection__result"></p>
+            </div>
+            <div class="projections__projection">
+                <h3 class="projection__title">
+                    Empresas con mayor y menor incremento salarial por año.
+                </h3>
+                <div class="projection__options">
+                    <select id="enterprise-increment-year" class="projection__options__select" name="" id="">
+                        <option value="">2018</option>
+                        <option value="">2019</option>
+                        <option value="">2020</option>
+                        <option value="">2021</option>
+                        <option value="">2022</option>
+                        <option value="">2023</option>
+                        <option value="">Todos los años</option>
+                    </select>
+                    <button id="enterprise-increment-button" class="projection__options__button">Calcular</button>
+                </div>
+                <p id="enterprise-increment-result" class="projection__result"></p>
+            </div>
+        </section>
+
+    </main>
+    <script src="./medias.js"></script>
+    <script src="./salarios.js"></script>
+    <script src="./imprimir.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>

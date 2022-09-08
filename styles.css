@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'Muli';
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.title {
+    font-size: 4.8rem;
+    margin-bottom: 20px;
+}
+.explanation {
+    width: 80%;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.salarys {
+    width: 80%;
+}
+.salarys__change-button {
+    width: 100px;
+    height: 50px;
+    font-family: 'Muli';
+    font-size: 1.8rem;
+    border: none;
+    background-color: transparent;
+    border-left: solid 1px #000;
+    border-right: solid 1px #000;
+    border-top: solid 1px #000;
+    cursor: pointer;
+}
+.salarys__change-button--active {
+    background-color: #000;
+    color: #FFF;
+}
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 25px;
+    width: 100%;
+    border: solid 1px #000 ;
+    height: 460px;
+    overflow: scroll;
+}
+.box::-webkit-scrollbar {
+    width: 5px;               
+}
+.box::-webkit-scrollbar-track {
+    display: none;
+    background: #FFF;        
+}
+.box::-webkit-scrollbar-thumb {
+    background-color: #000;
+}
+.box__salary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 5px;
+    width: 230px;
+}
+.box__salary__name {
+    font-size: 2.4rem;
+    margin-bottom: 10px;
+}
+.box__salary__data {
+    width: 90%;
+}
+.data__element {
+    display: flex;
+    width: 100%;
+    height: 20px;
+    font-size: 1.2rem;
+    border-bottom: dashed 1px #000;
+}
+.data__element__enterprise {
+    width: 60%;
+    overflow: hidden;
+}
+.data__element__year {
+    width: 20%;
+}
+.data__element__amount {
+    width: 20%;
+}
+
+.enterprise {
+    padding-bottom: 30px;
+    margin: 15px 10px 0px 10px;
+    width: 445px;
+    border-bottom: solid 1px #000;
+}
+.enterprise__name {
+    font-size: 2.6rem;
+}
+.enterprise__data {
+    font-size: 1.2rem;
+}
+.data__year {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: dashed 1px #000;
+}
+.data__year__text {
+    width: 40px;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.data__year__amount {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+}
+
+.projections {
+    width: 80%;
+}
+.projections__title {
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 500;
+}
+.projections__projection {
+    position: relative;
+    margin-bottom: 15px;
+}
+.projection__title {
+    margin-bottom: 15px;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+.projection__options {
+    position: absolute;
+    width: 100%;
+    border-bottom: solid 1px #000;
+    background-color: #000;
+}
+.projection__options__select {
+    width: 125px;
+    height: 30px;
+    font-family: 'Muli';
+    color: #FFF;
+    background-color: #000;
+    border: solid 1px #000;
+    border-bottom: none;
+    cursor: pointer;
+    outline: none;
+}
+.projection__options__select:hover {
+    color: #000;
+    background-color: #FFF;
+}
+.projection__options__button {
+    position: absolute;
+    right: 0px;
+    width: 125px;
+    height: 30px;
+    margin-left: auto;
+    font-family: 'Muli';
+    color: #FFF;
+    background-color: #000;
+    border: solid 1px #000;
+    border-bottom: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.projection__options__button:hover {
+    color: #000;
+    background-color: #FFF;
+}
+.projection__result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    margin-bottom: 15px;
+    min-height: 100px;
+    font-size: 1.4rem;
+    border: solid 1px #000;
+}
